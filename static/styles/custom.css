@@ -47,6 +47,10 @@
     justify-content: center;
 }
 
+.spec-flex p {
+    margin-bottom: 0;
+}
+
 .remember {
     display: flex;
     flex-direction: column;
