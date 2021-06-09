@@ -53,6 +53,7 @@ function createCard(element) {
     }
 
     let card = document.getElementById(cardNo);
+    card.classList.add('card-body-special');
     let container = document.createElement('div');
     container.classList.add('card-body');
     card.appendChild(container);

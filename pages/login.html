@@ -49,8 +49,8 @@
     </nav>
   </header>
   <div class=" container bottom-buffer">
-    <div class="container holder top-buffer">
-      <h1 class="well">Sign in to your Hoster account</h1>
+    <div class="container holder top-buffer reg">
+      <h3 class="well bottom-buffer top-padding">Sign in to your Hoster account</h3>
       <div class="col-lg-12 well">
         <div class="row">
           <form>
@@ -68,9 +68,20 @@
                   <input type="text" placeholder="Last Name" class="form-control">
                 </div>
               </div>
-              <button type="submit" class="btn btn-lg btn-info top-buffer bottom-buffer">Submit</button>
+              <div class="remember top-buffer">
+                <div class="remember-inner"> <input type="checkbox" id="remember" name="Remember Me">
+                  <label for="remember">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-md btn-info top-buffer bottom-buffer">Submit</button>
+              </div>
             </div>
           </form>
+          <div class="spec-flex">
+            <p>New to Hoster?</p>
+            <form action="/registration">
+              <button type="submit" class="btn btn-sm btn-info" value="Sign Up">Sign Up</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
