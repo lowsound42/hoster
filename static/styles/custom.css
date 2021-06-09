@@ -1,0 +1,28 @@
+.top-buffer {
+    margin-top: 20px;
+}
+
+.bottom-buffer {
+    margin-bottom: 20px;
+}
+
+.gradient {
+    background: #097ffa linear-gradient(40deg, #c0242e 0, #097ffa 100%) fixed !important;
+}
+
+.holder {
+    background-color: white;
+    width: 60%;
+}
+
+.rounded {
+    border-radius: 20%;
+}
+
+.special {
+    background-color: #ffffff;
+}
+
+.card-list {
+    border: 1px black solid;
+}
