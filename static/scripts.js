@@ -1,3 +1,13 @@
+/* 
+  WEB322 Assignment 1
+  Name: Omar Khan
+  Student Number: 132197203
+  Email: okhan27@myseneca.ca
+  Section NCC
+  Date: 10/6/2021 
+  All the work in the project is my own except for stock photos, icons, and bootstrap files included
+*/
+
 import { data } from './data.js';
 
 function createCardTitle(src) {
