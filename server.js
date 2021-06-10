@@ -22,10 +22,7 @@ app.get('/registration', (req, res) => {
 });
 
 app.use((req, res, next) => {
-    res.status(404).send({
-        status: 404,
-        error: `That's not a route!`
-    });
+    res.status(404).sendFile(path.join(__dirname + '/pages/404.html'));
 });
 
 app.listen(port, () => {
