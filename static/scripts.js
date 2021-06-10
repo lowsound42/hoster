@@ -38,15 +38,25 @@ function createCardList(src) {
 
 function createCard(element) {
     let cardNo;
+    let imgElement = document.createElement('i');
     switch (element.title) {
         case 'Personal':
             cardNo = 'cardOne';
+            imgElement.classList.add('fas');
+            imgElement.classList.add('fa-2x');
+            imgElement.classList.add('fa-portrait');
             break;
         case 'Pro':
             cardNo = 'cardTwo';
+            imgElement.classList.add('fas');
+            imgElement.classList.add('fa-2x');
+            imgElement.classList.add('fa-briefcase');
             break;
         case 'Enterprise':
             cardNo = 'cardThree';
+            imgElement.classList.add('fas');
+            imgElement.classList.add('fa-2x');
+            imgElement.classList.add('fa-building');
             break;
         default:
             break;
@@ -56,6 +66,7 @@ function createCard(element) {
     card.classList.add('card-body-special');
     let container = document.createElement('div');
     container.classList.add('card-body');
+    container.appendChild(imgElement);
     card.appendChild(container);
     let title = createCardTitle(element.title);
     container.appendChild(title);

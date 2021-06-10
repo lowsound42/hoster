@@ -43,8 +43,13 @@
 .spec-flex {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
 }
 
 .spec-flex p {
@@ -53,17 +58,10 @@
 
 .remember {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.remember-inner {
-    display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.remember-inner label {
+.remember label {
     margin-left: 1rem;
 }
