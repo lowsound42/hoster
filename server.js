@@ -16,23 +16,23 @@ const path = require('path');
 app.use(express.static('static'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/pages/index.html'));
+    res.sendFile(path.join(__dirname + '/static/html/index.html'));
 });
 
 app.get('/plans', (req, res) => {
-    res.sendFile(path.join(__dirname + '/pages/plans.html'));
+    res.sendFile(path.join(__dirname + '/static/html/plans.html'));
 });
 
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname + '/pages/login.html'));
+    res.sendFile(path.join(__dirname + '/static/html/login.html'));
 });
 
 app.get('/registration', (req, res) => {
-    res.sendFile(path.join(__dirname + '/pages/registration.html'));
+    res.sendFile(path.join(__dirname + '/static/html/registration.html'));
 });
 
 app.use((req, res, next) => {
-    res.status(404).sendFile(path.join(__dirname + '/pages/404.html'));
+    res.status(404).sendFile(path.join(__dirname + '/static/html/404.html'));
 });
 
 app.listen(port, () => {
